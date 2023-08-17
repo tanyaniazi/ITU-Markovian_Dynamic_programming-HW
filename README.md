@@ -8,6 +8,7 @@ In this GitHub repository, you will find code implementations that tackle the ch
 
 Task Overview:
 The primary task of this assignment is to implement and apply a standard solution algorithm for Markov Decision Processes (MDPs) to the living-donor liver transplantation model. Specifically, given a patient characterized by a state space S = {1, 2, ..., H, Δ}, where integers from 1 to H represent MELD scores and Δ represents death, along with a known organ quality ℓ for a donor, the following optimality equations are solved:
+
 v(h) = max(
     rT(h, ℓ),
     rW(h) + λ * Σ[h'∈S] (H{h' | h} * v(h'))
